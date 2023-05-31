@@ -16,8 +16,9 @@
         "prettier"
       ],
       "rules": {
+        "@angular-eslint/component-class-suffix": "off",
         "@angular-eslint/directive-selector": [
-          "error",
+          "off",
           {
             "type": "attribute",
             "prefix": "app",
@@ -25,7 +26,7 @@
           }
         ],
         "@angular-eslint/component-selector": [
-          "error",
+          "off",
           {
             "type": "element",
             "prefix": "app",
