@@ -1,0 +1,15 @@
+.toolbar-container {
+    padding-top: 2rem;
+
+    .mat-toolbar {
+        background-color: transparent;
+    }
+}
+
+.spacer {
+    flex: 1 1 auto;
+  }
+
+.toolbar-action {
+    margin: 1rem 1rem;
+}
