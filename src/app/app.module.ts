@@ -9,6 +9,7 @@ import { HomePage } from './pages/home/home';
 import { WorkPage } from './pages/work/work';
 import { AboutPage } from './pages/about/about';
 import { ContactPage } from './pages/contact/contact';
+import { ProjectCard } from './components/project_card/project_card';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { ContactPage } from './pages/contact/contact';
     HomePage,
     WorkPage,
     AboutPage,
-    ContactPage
+    ContactPage,
+    ProjectCard
   ],
   imports: [
     BrowserModule,
