@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-import { SiteTitle, PageTitle } from 'src/static_string';
+import { Component, EventEmitter, Output } from '@angular/core';
+import { SiteTitle, PageTitle } from 'src/constants';
 
 @Component({
   selector: 'toolbar',
@@ -7,6 +7,11 @@ import { SiteTitle, PageTitle } from 'src/static_string';
   styleUrls: ['./toolbar.scss']
 })
 export class Toolbar {
+  @Output() switchPageEvent = new EventEmitter<PageTitle>();
   title = SiteTitle;
-  pageTitle = PageTitle;
+  PageTitle = PageTitle;
+
+  switchPage(page: PageTitle){
+    this.switchPageEvent.emit(page);
+  }
 }

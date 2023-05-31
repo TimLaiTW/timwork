@@ -1,5 +1,14 @@
-<toolbar></toolbar>
-<home-page></home-page>
-<work-page></work-page>
-<about-page></about-page>
-<contact-page></contact-page>
+<toolbar (switchPageEvent)="switchPage($event)"></toolbar>
+
+<ng-container *ngIf="openedPage === PageTitle.HOME">
+    <home-page></home-page>
+</ng-container>
+<ng-container *ngIf="openedPage === PageTitle.WORK">
+    <work-page></work-page>
+</ng-container>
+<ng-container *ngIf="openedPage === PageTitle.ABOUT">
+    <about-page></about-page>
+</ng-container>
+<ng-container *ngIf="openedPage === PageTitle.CONTACT">
+    <contact-page></contact-page>
+</ng-container>

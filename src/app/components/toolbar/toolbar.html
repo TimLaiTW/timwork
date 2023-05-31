@@ -1,17 +1,17 @@
 <div class="toolbar-container">
     <mat-toolbar>
-        <button class="site-logo" aria-label="Official website name">
+        <button class="site-logo" aria-label="Official website name" (click)="switchPage(PageTitle.HOME)">
             <img src="../../../assets/Timwork_logo.svg" alt="Website logo" height="64px">
         </button>
         <span class="spacer"></span>
-        <button class="toolbar-action capital" aria-label="Switch page button for projects">
-            <span>{{pageTitle.WORK}}</span>
+        <button class="toolbar-action capital" aria-label="Switch page button for projects" (click)="switchPage(PageTitle.WORK)">
+            <span>{{PageTitle.WORK}}</span>
         </button>
-        <button class="toolbar-action capital" aria-label="Switch page button for introduction">
-            <span>{{pageTitle.ABOUT}}</span>
+        <button class="toolbar-action capital" aria-label="Switch page button for introduction" (click)="switchPage(PageTitle.ABOUT)">
+            <span>{{PageTitle.ABOUT}}</span>
         </button>
-        <button class="toolbar-action capital" aria-label="Switch page button for contact">
-            <span>{{pageTitle.CONTACT}}</span>
+        <button class="toolbar-action capital" aria-label="Switch page button for contact" (click)="switchPage(PageTitle.CONTACT)">
+            <span>{{PageTitle.CONTACT}}</span>
         </button>
     </mat-toolbar>
 </div>
