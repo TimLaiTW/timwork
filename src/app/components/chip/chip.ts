@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { ProjectType } from '../../../types';
+import { ProjectType } from 'src/app/pages/work/project_config';
 
 @Component({
   selector: 'chip',

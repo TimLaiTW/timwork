@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { ProjectData } from 'src/app/pages/work/project_config';
 
 @Component({
   selector: 'project-card',
@@ -6,7 +7,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./project_card.scss']
 })
 export class ProjectCard {
-  openUrl(){
-    console.log('clicked');
+  @Input() project!: ProjectData; 
+  
+  openUrl(url: string){
+    window.open(url, '_blank');
   }
 }
